@@ -519,7 +519,7 @@
     "@react-types/breadcrumbs" "3.7.11"
     "@react-types/shared" "3.28.0"
 
-"@heroui/button@2.2.16":
+"@heroui/button@2.2.16", "@heroui/button@^2.2.16":
   version "2.2.16"
   resolved "https://registry.yarnpkg.com/@heroui/button/-/button-2.2.16.tgz#4ad4e573b6ca872706be84e0dd735d9597b2e537"
   integrity sha512-fT+vh8DkjHACeRQQrJK5ZOe2PQXeYBzBFhXpRTkkeRYC+lmjTuQqEhcUp/2JtgUlXN4/PL6ItLmFrARDjRxbvQ==
@@ -611,7 +611,7 @@
     "@react-aria/utils" "3.28.0"
     "@react-types/checkbox" "3.9.2"
 
-"@heroui/code@2.2.12":
+"@heroui/code@2.2.12", "@heroui/code@^2.2.12":
   version "2.2.12"
   resolved "https://registry.yarnpkg.com/@heroui/code/-/code-2.2.12.tgz#f0b0c1ada292c25815bdcb3b8bc460e965d2b1d9"
   integrity sha512-BYA8zmG2arn7FSCxiPC+ehy+TL7967W6i6iXBUIHpkSNAMPr29AZAC4H0i09b0ibxr0dLJWHC3Y/IPdFK8uI6g==
@@ -749,7 +749,7 @@
     "@react-types/textfield" "3.12.0"
     input-otp "1.4.1"
 
-"@heroui/input@2.4.16":
+"@heroui/input@2.4.16", "@heroui/input@^2.4.16":
   version "2.4.16"
   resolved "https://registry.yarnpkg.com/@heroui/input/-/input-2.4.16.tgz#67d96de44ec74181bc6f7c59fcff6880b4a4285c"
   integrity sha512-gSEalFg2usD7SjkevRyulvbJksecW/L9vqZWGHgcm6NpOlt5lGb/b6E2AEuhNFWbrN4pgUmfFUqqmZfFbc4M9Q==
@@ -768,7 +768,7 @@
     "@react-types/textfield" "3.12.0"
     react-textarea-autosize "^8.5.3"
 
-"@heroui/kbd@2.2.12":
+"@heroui/kbd@2.2.12", "@heroui/kbd@^2.2.12":
   version "2.2.12"
   resolved "https://registry.yarnpkg.com/@heroui/kbd/-/kbd-2.2.12.tgz#0045edba28830633b345d3b0558962ee3cf5368e"
   integrity sha512-SlP1qy3ECidAl0ykXMkp4aevI3xCqf8kUegbOpYZ+qGUq76LJ3y3/mFotzhKJ67fki0crz3MjTAh5a0TSkMUjA==
@@ -778,7 +778,7 @@
     "@heroui/system-rsc" "2.3.11"
     "@react-aria/utils" "3.28.0"
 
-"@heroui/link@2.2.13":
+"@heroui/link@2.2.13", "@heroui/link@^2.2.13":
   version "2.2.13"
   resolved "https://registry.yarnpkg.com/@heroui/link/-/link-2.2.13.tgz#639052f18f16a25fe0e980531a504e94137dd76a"
   integrity sha512-muv39Lc0ToPAbhkxPb5YHrOWBu7EzHVsLsBdmmR47ejyczulxmBJFBia3AZx/Lp+n36ceTcuZ5zqdc8hmMO+Vg==
@@ -792,7 +792,7 @@
     "@react-aria/utils" "3.28.0"
     "@react-types/link" "3.5.11"
 
-"@heroui/listbox@2.3.15":
+"@heroui/listbox@2.3.15", "@heroui/listbox@^2.3.15":
   version "2.3.15"
   resolved "https://registry.yarnpkg.com/@heroui/listbox/-/listbox-2.3.15.tgz#5b398dc11383d560a2bcec54776c96a2d9946051"
   integrity sha512-BLxvRtu68RWx6wJpJxbM5K7HjuZrRTezkUUQWbLoF1aygOsy1vX1b9gWvZq8+1AHjf7AyyRQ8z6dNqvhun7i8Q==
@@ -852,7 +852,7 @@
     "@react-stately/overlays" "3.6.14"
     "@react-types/overlays" "3.8.13"
 
-"@heroui/navbar@2.2.14":
+"@heroui/navbar@2.2.14", "@heroui/navbar@^2.2.14":
   version "2.2.14"
   resolved "https://registry.yarnpkg.com/@heroui/navbar/-/navbar-2.2.14.tgz#e0d8572266c6f974136ab5da0f5de6d289bc2305"
   integrity sha512-e18GHX1cgOLWZ1LhCxcM8EFRfwrWDCVS1GS/Y28qQskTDL0EsqMmdGHeEDwSrg0diCoPQrh6vnUh+9UlWd1l1g==
@@ -1107,7 +1107,7 @@
     "@react-aria/visually-hidden" "3.8.20"
     "@react-stately/slider" "3.6.2"
 
-"@heroui/snippet@2.2.17":
+"@heroui/snippet@2.2.17", "@heroui/snippet@^2.2.17":
   version "2.2.17"
   resolved "https://registry.yarnpkg.com/@heroui/snippet/-/snippet-2.2.17.tgz#e20947ac925e0e4714c43d7e827fe6d13e3803c1"
   integrity sha512-6wB9VuGOv1BG7NE1qTnhWgfNK85NiIC5Kr+x3HlZTCleCrRn8AK8OGLztYvzNWcW2K3Y0tAtwo1RoDCWjjFiuw==
@@ -1140,7 +1140,7 @@
     "@heroui/system" "2.4.12"
     "@heroui/system-rsc" "2.3.11"
 
-"@heroui/switch@2.2.14":
+"@heroui/switch@2.2.14", "@heroui/switch@^2.2.14":
   version "2.2.14"
   resolved "https://registry.yarnpkg.com/@heroui/switch/-/switch-2.2.14.tgz#e7684503b9e071e13445bc8a8e65cc92d248ff48"
   integrity sha512-vts3zWA+sWUETeXZ+8kKt9XGXYXjYA0WK5KamaSsBol5yK3UFe0taj+wgZEgH7qlc3O95uOZdLj5vHDFREWqfQ==
@@ -1164,7 +1164,7 @@
     "@react-types/shared" "3.28.0"
     clsx "^1.2.1"
 
-"@heroui/system@2.4.12":
+"@heroui/system@2.4.12", "@heroui/system@^2.4.12":
   version "2.4.12"
   resolved "https://registry.yarnpkg.com/@heroui/system/-/system-2.4.12.tgz#55afe438b8b5ca941359fc88a039b36b586243b5"
   integrity sha512-MjLGJoPIa3co02PA8XEkqWgoxg3jjcyQV2OCINpMREysO0DOweX7voTE/UmSWOuXsPQULwE1pXdP9RLjtersyQ==
@@ -1219,7 +1219,7 @@
     "@react-types/tabs" "3.3.13"
     scroll-into-view-if-needed "3.0.10"
 
-"@heroui/theme@2.4.12":
+"@heroui/theme@2.4.12", "@heroui/theme@^2.4.12":
   version "2.4.12"
   resolved "https://registry.yarnpkg.com/@heroui/theme/-/theme-2.4.12.tgz#1c250b24fb580bfa969014bbd906d7a1d1ce059b"
   integrity sha512-sm4DOBhJW88U9h0dfXwX3eA6w125jUi/OfFZtV1zUIyXBPF3c1Va23XO6XmGxDTCgBT4iBwpGBoyHbSYpAnaVg==
