@@ -6,48 +6,6 @@ import { Image } from "@heroui/image";
 import { Card, CardBody } from "@heroui/card";
 import { Technologies } from "@/components/technologies";
 
-const rows = [
-  {
-    key: "1",
-    name: "Tony Reichert",
-    role: "CEO",
-    status: "Active",
-  },
-  {
-    key: "2",
-    name: "Zoey Lang",
-    role: "Technical Lead",
-    status: "Paused",
-  },
-  {
-    key: "3",
-    name: "Jane Fisher",
-    role: "Senior Developer",
-    status: "Active",
-  },
-  {
-    key: "4",
-    name: "William Howard",
-    role: "Community Manager",
-    status: "Vacation",
-  },
-];
-
-const columns = [
-  {
-    key: "name",
-    label: "NAME",
-  },
-  {
-    key: "role",
-    label: "ROLE",
-  },
-  {
-    key: "status",
-    label: "STATUS",
-  },
-];
-
 export default function Home() {
   return (
     <div className="flex flex-col items-center justify-center gap-2 py-4 md:py-4">
@@ -72,10 +30,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section
-        id="about"
-        className="w-screen py-[2%] px-[10%] border-2"
-      >
+      <section id="about" className="w-screen py-[2%] px-[10%] border-2">
         <div className="flex justify-center">
           <div className="w-[30%]">
             <Image
@@ -101,7 +56,9 @@ export default function Home() {
             <Card>
               <CardBody className="text-lg p-4">
                 <div className="m-2">Company: GMO Flatt Security Inc.</div>
-                <div className="m-2">Field: Security Researcher and Software Engineer</div>
+                <div className="m-2">
+                  Occupation: Security Researcher and Software Engineer
+                </div>
               </CardBody>
             </Card>
           </div>

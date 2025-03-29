@@ -24,21 +24,28 @@ export const Technologies = () => {
         <TableBody items={techRows}>
           {(item) => (
             <TableRow key={item.genre}>
-              {(columnKey) => (
+              {(columnKey) =>
                 columnKey === "genre" ? (
                   <TableCell>
-                    <div className="text-base font-bold">{getKeyValue(item, columnKey)}</div>
+                    <div className="text-base font-bold">
+                      {getKeyValue(item, columnKey)}
+                    </div>
                   </TableCell>
                 ) : (
                   <TableCell>
                     {getKeyValue(item, columnKey).map((tech: string) => (
-                      <Chip key={tech} variant="faded" radius="sm" className="mx-px">
+                      <Chip
+                        key={tech}
+                        variant="faded"
+                        radius="sm"
+                        className="mx-px"
+                      >
                         {tech}
                       </Chip>
                     ))}
                   </TableCell>
                 )
-              )}
+              }
             </TableRow>
           )}
         </TableBody>
