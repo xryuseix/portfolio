@@ -7,8 +7,8 @@
     "build": "next build",
     "deploy": "yarn build && wrangler pages deploy",
     "logging": "wrangler pages deployment tail",
-    "start": "next start",
-    "lint": "next lint"
+    "lint": "biome lint --write ./src",
+    "format": "biome format --write ./src"
   },
   "dependencies": {
     "next": "15.2.4",
@@ -17,6 +17,7 @@
     "wrangler": "^4.6.0"
   },
   "devDependencies": {
+    "@biomejs/biome": "1.9.4",
     "@eslint/eslintrc": "^3",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
