@@ -8,14 +8,16 @@ export const siteConfig = {
       label: "Home",
       href: "/",
     },
-    {
-      label: "About me",
-      href: "/about",
-    },
-    {
-      label: "Apps",
-      href: "/apps",
-    },
+    // {
+    //   label: "About me",
+    //   href: "/about",
+    //   disabled: true,
+    // },
+    // {
+    //   label: "Apps",
+    //   href: "/apps",
+    //   disabled: true,
+    // },
     {
       label: "Accounts",
       href: "/accounts",
@@ -25,10 +27,12 @@ export const siteConfig = {
     {
       label: "About me",
       href: "/about",
+      disabled: true,
     },
     {
       label: "Apps",
       href: "/apps",
+      disabled: true,
     },
     {
       label: "Accounts",

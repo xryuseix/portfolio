@@ -5,6 +5,7 @@ import { Spacer } from "@heroui/spacer";
 import { Image } from "@heroui/image";
 import { Card, CardBody } from "@heroui/card";
 import { Technologies } from "@/components/technologies";
+import { Stars } from "@/components/stars";
 
 export default function Home() {
   return (
@@ -29,6 +30,8 @@ export default function Home() {
           </Link>
         </div>
       </section>
+
+      <Stars />
 
       <section id="about" className="w-screen py-[2%] px-[10%] border-2">
         <div className="flex justify-center">
@@ -63,7 +66,7 @@ export default function Home() {
             </Card>
           </div>
         </div>
-        <Spacer y={8} />
+        <Spacer y={2} />
         <Technologies />
       </section>
     </div>

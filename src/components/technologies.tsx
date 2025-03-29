@@ -14,7 +14,7 @@ import {
 export const Technologies = () => {
   return (
     <div>
-      <div className="text-2xl">💻 Technologies</div>
+      <div className="text-2xl m-2">💻 Technologies</div>
       <Table aria-label="Example table with dynamic content">
         <TableHeader columns={techColumns}>
           {(column) => (
