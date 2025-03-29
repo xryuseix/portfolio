@@ -1,47 +1,114 @@
 import { Link } from "@heroui/link";
-import { Snippet } from "@heroui/snippet";
-import { Code } from "@heroui/code";
 import { button as buttonStyles } from "@heroui/theme";
-
-import { siteConfig } from "@/config/site";
 import { title, subtitle } from "@/components/primitives";
-import { GithubIcon } from "@/components/icons";
-import { Counter } from "@/components/counter";
+import { Spacer } from "@heroui/spacer";
+import { Image } from "@heroui/image";
+import { Card, CardBody } from "@heroui/card";
+import { Technologies } from "@/components/technologies";
+
+const rows = [
+  {
+    key: "1",
+    name: "Tony Reichert",
+    role: "CEO",
+    status: "Active",
+  },
+  {
+    key: "2",
+    name: "Zoey Lang",
+    role: "Technical Lead",
+    status: "Paused",
+  },
+  {
+    key: "3",
+    name: "Jane Fisher",
+    role: "Senior Developer",
+    status: "Active",
+  },
+  {
+    key: "4",
+    name: "William Howard",
+    role: "Community Manager",
+    status: "Vacation",
+  },
+];
+
+const columns = [
+  {
+    key: "name",
+    label: "NAME",
+  },
+  {
+    key: "role",
+    label: "ROLE",
+  },
+  {
+    key: "status",
+    label: "STATUS",
+  },
+];
 
 export default function Home() {
   return (
-    <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
-      <div className="inline-block max-w-xl text-center justify-center">
-        <span className={title()}>Make&nbsp;</span>
-        <span className={title({ color: "violet" })}>beautiful&nbsp;</span>
-        <br />
-        <span className={title()}>
-          websites regardless of your design experience.
-        </span>
-        <div className={subtitle({ class: "mt-4" })}>
-          Beautiful, fast and modern React UI library.
+    <div className="flex flex-col items-center justify-center gap-2 py-4 md:py-4">
+      <section className="h-screen justify-center items-center p-4 mt-16">
+        <div className="inline-block max-w-xl text-center justify-center">
+          <span className={title()}>I'm&nbsp;</span>
+          <span className={title({ color: "cyan" })}>xryuseix&nbsp;</span>
+          <span className={title()}>👋</span>
+          <br />
+          <div className={subtitle({ class: "mt-4" })}>
+            Security Researcher and Software Engineer.
+          </div>
         </div>
-      </div>
+        <Spacer y={16} />
+        <div className="max-w-xl text-center justify-center">
+          <Link
+            className={buttonStyles({ variant: "bordered" })}
+            href={"#about"}
+          >
+            About Me
+          </Link>
+        </div>
+      </section>
 
-      <div className="flex gap-3">
-        <Link
-          isExternal
-          className={buttonStyles({ variant: "bordered", radius: "full" })}
-          href={siteConfig.links.github}
-        >
-          <GithubIcon size={20} />
-          GitHub
-        </Link>
-      </div>
-
-      <div className="mt-8">
-        <Snippet hideCopyButton hideSymbol variant="bordered">
-          <span>
-            Get started by editing <Code color="primary">app/page.tsx</Code>
-          </span>
-        </Snippet>
-      </div>
-      <Counter />
-    </section>
+      <section
+        id="about"
+        className="w-screen py-[2%] px-[10%] border-2"
+      >
+        <div className="flex justify-center">
+          <div className="w-[30%]">
+            <Image
+              isBlurred
+              isZoomed
+              alt="xryuseix icon"
+              src="/icon_400x400.jpg"
+              height={300}
+              width={300}
+            />
+          </div>
+          <div className="w-[60%]">
+            <div>
+              <span className={title({ color: "violet" })}>
+                Ryusei Ishikawa
+              </span>
+              <span className={title({ color: "foreground" })}>
+                &nbsp;/&nbsp;
+              </span>
+              <span className={title({ color: "cyan" })}>xryuseix</span>
+            </div>
+            <Spacer y={16} />
+            <Card>
+              <CardBody className="text-lg p-4">
+                <div className="m-2">Company: GMO Flatt Security Inc.</div>
+                <div className="m-2">Field: Security Researcher and Software Engineer</div>
+              </CardBody>
+            </Card>
+          </div>
+        </div>
+        <Spacer y={8} />
+        <Technologies />
+      </section>
+    </div>
   );
 }
