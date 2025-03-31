@@ -33,7 +33,7 @@ export default function Home() {
 
       <Stars />
 
-      <section id="about" className="w-screen py-[2%] px-[10%]">
+      <section id="about" className="w-screen md:h-screen py-[2%] px-[10%]">
         <div className="md:flex justify-center">
           <div className="md:w-[30%] flex justify-center">
             <Image
@@ -72,7 +72,7 @@ export default function Home() {
                   </Link>
                 </div>
                 <div className="m-2">
-                  <span className="text-gray-300 font-light">Company: </span>
+                  <span className="text-gray-300 font-light">Occupation: </span>
                   Security Researcher and Software Engineer
                 </div>
               </CardBody>

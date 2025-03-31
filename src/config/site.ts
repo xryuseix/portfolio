@@ -16,11 +16,11 @@ export const siteConfig = {
       label: "Accounts",
       href: "/accounts",
     },
-    {
-      label: "Apps",
-      href: "/apps",
-      disabled: true,
-    },
+    // {
+    //   label: "Apps",
+    //   href: "/apps",
+    //   disabled: true,
+    // },
   ],
   navMenuItems: [
     {
@@ -35,11 +35,11 @@ export const siteConfig = {
       label: "Accounts",
       href: "/accounts",
     },
-    {
-      label: "Apps",
-      href: "/apps",
-      disabled: true,
-    },
+    // {
+    //   label: "Apps",
+    //   href: "/apps",
+    //   disabled: true,
+    // },
   ],
   links: {
     github: "https://github.com/xryuseix",
