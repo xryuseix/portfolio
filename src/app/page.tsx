@@ -12,7 +12,7 @@ export default function Home() {
     <div className="flex flex-col items-center justify-center gap-2 py-4 md:py-4">
       <section className="h-screen justify-center items-center p-4 mt-16">
         <div className="inline-block max-w-xl text-center justify-center">
-          <span className={title()}>I'm&nbsp;</span>
+          <span className={title()}>I&apos;m&nbsp;</span>
           <span className={title({ color: "cyan" })}>xryuseix&nbsp;</span>
           <span className={title()}>👋</span>
           <br />
@@ -33,7 +33,7 @@ export default function Home() {
 
       <Stars />
 
-      <section id="about" className="w-screen py-[2%] px-[10%] border-2">
+      <section id="about" className="w-screen py-[2%] px-[10%]">
         <div className="flex justify-center">
           <div className="w-[30%]">
             <Image
@@ -58,7 +58,17 @@ export default function Home() {
             <Spacer y={16} />
             <Card>
               <CardBody className="text-lg p-4">
-                <div className="m-2">Company: GMO Flatt Security Inc.</div>
+                <div className="m-2">
+                  Company:{" "}
+                  <Link
+                    isExternal
+                    color="foreground"
+                    href="https://flatt.tech/"
+                    className="hover:underline"
+                  >
+                    GMO Flatt Security Inc.
+                  </Link>
+                </div>
                 <div className="m-2">
                   Occupation: Security Researcher and Software Engineer
                 </div>
