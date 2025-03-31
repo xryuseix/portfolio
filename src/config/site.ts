@@ -8,36 +8,36 @@ export const siteConfig = {
       label: "Home",
       href: "/",
     },
-    // {
-    //   label: "About me",
-    //   href: "/about",
-    //   disabled: true,
-    // },
+    {
+      label: "About Me",
+      href: "/about",
+      disabled: true,
+    },
+    {
+      label: "Accounts",
+      href: "/accounts",
+    },
     // {
     //   label: "Apps",
     //   href: "/apps",
     //   disabled: true,
     // },
-    {
-      label: "Accounts",
-      href: "/accounts",
-    },
   ],
   navMenuItems: [
     {
-      label: "About me",
+      label: "About Me",
       href: "/about",
       disabled: true,
     },
     {
-      label: "Apps",
-      href: "/apps",
-      disabled: true,
-    },
-    {
       label: "Accounts",
       href: "/accounts",
     },
+    // {
+    //   label: "Apps",
+    //   href: "/apps",
+    //   disabled: true,
+    // },
   ],
   links: {
     github: "https://github.com/xryuseix",
