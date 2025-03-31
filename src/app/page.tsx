@@ -34,8 +34,8 @@ export default function Home() {
       <Stars />
 
       <section id="about" className="w-screen py-[2%] px-[10%]">
-        <div className="flex justify-center">
-          <div className="w-[30%]">
+        <div className="md:flex justify-center">
+          <div className="md:w-[30%] flex justify-center">
             <Image
               isBlurred
               isZoomed
@@ -45,9 +45,11 @@ export default function Home() {
               width={300}
             />
           </div>
-          <div className="w-[60%]">
-            <div>
-              <span className={title({ color: "violet" })}>
+          <div className="md:w-[60%] mt-4 md:mt-0 ml-0 md:ml-4">
+            <div className="flex flex-wrap">
+              <span
+                className={`${title({ color: "violet" })} whitespace-nowrap`}
+              >
                 Ryusei Ishikawa
               </span>
               <span className={title({ color: "foreground" })}>
@@ -55,11 +57,11 @@ export default function Home() {
               </span>
               <span className={title({ color: "cyan" })}>xryuseix</span>
             </div>
-            <Spacer y={16} />
+            <Spacer y={12} />
             <Card>
               <CardBody className="text-lg p-4">
                 <div className="m-2">
-                  Company:{" "}
+                  <span className="text-gray-300 font-light">Company: </span>
                   <Link
                     isExternal
                     color="foreground"
@@ -70,10 +72,17 @@ export default function Home() {
                   </Link>
                 </div>
                 <div className="m-2">
-                  Occupation: Security Researcher and Software Engineer
+                  <span className="text-gray-300 font-light">Company: </span>
+                  Security Researcher and Software Engineer
                 </div>
               </CardBody>
             </Card>
+            <Spacer y={4} />
+            <div className="text-right font-bold mr-2">
+              <Link color="primary" href="/about" className="hover:underline">
+                View more information →
+              </Link>
+            </div>
           </div>
         </div>
         <Spacer y={2} />

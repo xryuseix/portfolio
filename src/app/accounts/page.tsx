@@ -10,8 +10,8 @@ export default function AccountsPage() {
     <div>
       <h1 className={title()}>Accounts</h1>
       <Spacer y={8} />
-      <div className="flex mx-[10%] justify-center">
-        <div className="flex gap-6 justify-center flex-wrap w-[55%]">
+      <div className="flex mx-4 md:mx-[10%] justify-center">
+        <div className="flex gap-6 justify-center flex-wrap md:w-[55%]">
           {accounts.map((account) => (
             <Link
               isExternal

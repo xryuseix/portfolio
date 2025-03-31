@@ -60,7 +60,16 @@ export const AboutTable = ({
   return (
     <Table aria-label="Example table with dynamic content">
       <TableHeader columns={columns}>
-        {(column) => <TableColumn key={column.key}>{column.label}</TableColumn>}
+        {(column) => {
+          if (column.key === "tags") {
+            return (
+              <TableColumn key={column.key} className="hidden md:table-cell">
+                {column.label}
+              </TableColumn>
+            );
+          }
+          return <TableColumn key={column.key}>{column.label}</TableColumn>;
+        }}
       </TableHeader>
       <TableBody items={rows}>
         {(item) => (
@@ -69,7 +78,7 @@ export const AboutTable = ({
               switch (columnKey) {
                 case "year":
                   return (
-                    <TableCell className="break-keep whitespace-nowrap">
+                    <TableCell className="md:whitespace-nowrap">
                       <YearCol {...getKeyValue(item, columnKey)} />
                     </TableCell>
                   );
@@ -81,7 +90,7 @@ export const AboutTable = ({
                   );
                 case "tags":
                   return (
-                    <TableCell>
+                    <TableCell className="hidden md:table-cell">
                       <TagsCol tags={getKeyValue(item, columnKey)} />
                     </TableCell>
                   );

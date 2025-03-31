@@ -11,33 +11,35 @@ export const siteConfig = {
     {
       label: "About Me",
       href: "/about",
-      disabled: true,
     },
     {
       label: "Accounts",
       href: "/accounts",
     },
-    // {
-    //   label: "Apps",
-    //   href: "/apps",
-    //   disabled: true,
-    // },
+    {
+      label: "Apps",
+      href: "/apps",
+      disabled: true,
+    },
   ],
   navMenuItems: [
     {
+      label: "Home",
+      href: "/",
+    },
+    {
       label: "About Me",
       href: "/about",
-      disabled: true,
     },
     {
       label: "Accounts",
       href: "/accounts",
     },
-    // {
-    //   label: "Apps",
-    //   href: "/apps",
-    //   disabled: true,
-    // },
+    {
+      label: "Apps",
+      href: "/apps",
+      disabled: true,
+    },
   ],
   links: {
     github: "https://github.com/xryuseix",
