@@ -79,7 +79,6 @@ export const Navbar = () => {
                 color={"foreground"}
                 href={item.href}
                 size="lg"
-                isDisabled={item.disabled}
               >
                 {item.label}
               </Link>
