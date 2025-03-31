@@ -7,7 +7,7 @@ export const rows: Row[] = [
       until: "",
     },
     title: "応用情報技術者",
-    link: "https://www.jitec.ipa.go.jp/1_11seido/ap.html",
+    link: "https://www.ipa.go.jp/shiken/kubun/ap.html",
     tags: ["certification"],
   },
   {
